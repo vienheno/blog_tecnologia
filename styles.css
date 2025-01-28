@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 40px 30px;
+    justify-content: space-between; /*Alinea horizoltalmente abarcando todo el ancho del contenedor.*/
+}
+
+nav h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    /*border: 2px solid green;*/
+}
+
+nav ul li {
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(17, 255, 17);
+}
+
+main {
+    display: flex;    
+    justify-content: center;
+    width: 90%;
+    /*border: 2px solid green;*/
+    margin: 0 auto;
+    
+}
+
+main article {
+    margin: 2% 3%;
+}
+
+.c1 {
+    /*border: 2px solid green;*/
+    width: 65%;
+    padding: 0% 0% 1% 2%;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+}
+
+.c2 {
+    width: 35%;
+    height: 100%;
+    /*border: 2px solid green;*/
+    padding: 0% 0% 3% 1%;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+}
+
+.c2 ul {
+    margin: 0% 10% 0% 10%;
+}
+
+.c2 ul li {
+    padding: 3px 0px;
+    line-height: 1.3; /*Cambia el interlineado de un texto*/
+}
+
+.c2 ul li a {
+    color: black;
+    font-weight: 600;
+}
+
+main article img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+main article h2 {
+    margin: 20px 0px;
+}
+main article h3 {
+    margin: 20px 0px;
+}
+
+main article p {
+    margin: 10px 0px;
+    line-height: 1.3;
+}
+
+main article button {
+    background-color: rgb(0, 163, 0);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+footer p {
+    padding: 10px;
+}
+
+footer p a {
+    color: rgb(0, 156, 0);
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .c1 {
+        width: 95%;    
+    }
+
+    .c2 {
+        width: 95%;
+    }
+
+    main article img {
+        width: 90%;
+        display: block; /*Asegura que la imagen esté en toda la linea del contenedor*/
+        margin: 0 auto; /*Centra la imagen, necesita el display:block para que funcione*/
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 20px 30px 10px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 20px;
+        
+    }
+}
